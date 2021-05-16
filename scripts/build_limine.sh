@@ -8,7 +8,7 @@ parted -s build/kernel.img set 1 boot on
 echfs-utils -m -p0 build/kernel.img quick-format 32768
 echfs-utils -m -p0 build/kernel.img import limine/limine.sys limine.sys
 echfs-utils -m -p0 build/kernel.img import limine.cfg limine.cfg
-echfs-utils -m -p0 build/kernel.img import target/x86_64/debug/adamant kernel.elf
+echfs-utils -m -p0 build/kernel.img import target/x86_64/debug/rust_limine_barebones kernel.elf
 
 # echfs-utils -m -p0 kernel.img import <path to file> <path in image>
 ./limine/limine-install-linux-x86_64 build/kernel.img
