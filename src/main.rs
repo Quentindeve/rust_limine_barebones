@@ -16,8 +16,6 @@ static FRAMEBUFFER_TAG: HeaderFramebufferTag = HeaderFramebufferTag::new().bpp(2
 static STIVALE_HDR: StivaleHeader = StivaleHeader::new(&STACK[4095] as *const u8)
     .tags((&FRAMEBUFFER_TAG as *const HeaderFramebufferTag).cast());
 
-static HELLO: &[u8] = b"Hello, World !";
-
 #[no_mangle]
 extern "C" fn entry_point(_header_addr: usize) -> ! {
     for &char in b"Hello, World !".iter() {
