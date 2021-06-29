@@ -3,7 +3,6 @@
 #![feature(llvm_asm)]
 
 use core::panic::PanicInfo;
-use core::ptr;
 use stivale::{HeaderFramebufferTag, StivaleHeader};
 
 static STACK: [u8; 4096] = [0; 4096];
