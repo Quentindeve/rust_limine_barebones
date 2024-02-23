@@ -1,5 +1,7 @@
 # Rust Limine Barebones
 
+# ⚠️ WARNING: This repo makes use of Xargo, whose features got included into regular Cargo. Therefore, you can look into replacing it. ⚠️ 
+
 This is a small kernel that boots using Limine.
 
 ## Build
